@@ -1,0 +1,5 @@
+package org.dsi.repo;
+
+public interface ProductRepo {
+
+}

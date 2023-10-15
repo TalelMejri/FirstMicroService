@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1697402548678_0" label="Java Main Sources" name="Java Main Sources">
+<item elementID="=product-service/src\/main\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=product-service/src\/main\/resources" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=product-service/target\/generated-sources\/annotations" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=gateway-service/src\/main\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=gateway-service/src\/main\/resources" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=register-service/src\/main\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=register-service/src\/main\/resources" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1697402548696_1" label="Java Test Sources" name="Java Test Sources">
+<item elementID="=product-service/src\/test\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=product-service/target\/generated-test-sources\/test-annotations" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=gateway-service/src\/test\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=register-service/src\/test\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1697402550809_2" label="Window Working Set" name="Aggregate for window 1697402550809"/>
+</workingSetManager>

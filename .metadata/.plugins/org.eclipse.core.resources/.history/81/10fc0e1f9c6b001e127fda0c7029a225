@@ -1,0 +1,10 @@
+package org.dsi.entity;
+
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+public class product {
+	@Id
+	 @GeneratedValue(strategy = GenerationType.AUTO))
+
+}

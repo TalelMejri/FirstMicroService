@@ -1,0 +1,706 @@
+2023-10-15 21:42:31,160 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2023-10-15 21:45:14,466 [Worker-8: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 0 sec
+2023-10-15 21:45:14,507 [Worker-8: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2023-10-15 21:45:17,080 [Worker-10: reload maven project] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Failed to read Maven project: Some problems were encountered while processing the POMs:
+[FATAL] Non-resolvable parent POM for org.dsi:product-service:0.0.1-SNAPSHOT: Failure to find org.springframework.boot:spring-boot-starter-parent:pom:2.7.16.RELEASE in https://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced and 'parent.relativePath' points at no local POM @ line 5, column 10
+
+org.apache.maven.project.ProjectBuildingException: Some problems were encountered while processing the POMs:
+[FATAL] Non-resolvable parent POM for org.dsi:product-service:0.0.1-SNAPSHOT: Failure to find org.springframework.boot:spring-boot-starter-parent:pom:2.7.16.RELEASE in https://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced and 'parent.relativePath' points at no local POM @ line 5, column 10
+
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readMavenProjects(MavenImpl.java:676) ~[org.eclipse.m2e.core_1.13.0.20190716-1624.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$12(ProjectRegistryManager.java:871) ~[org.eclipse.m2e.core_1.13.0.20190716-1624.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177) ~[org.eclipse.m2e.core_1.13.0.20190716-1624.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) ~[org.eclipse.m2e.core_1.13.0.20190716-1624.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) ~[org.eclipse.m2e.core_1.13.0.20190716-1624.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.execute(ProjectRegistryManager.java:1026) ~[org.eclipse.m2e.core_1.13.0.20190716-1624.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectsWithDependencies(ProjectRegistryManager.java:867) ~[org.eclipse.m2e.core_1.13.0.20190716-1624.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.create(ProjectRegistryManager.java:207) ~[org.eclipse.m2e.core_1.13.0.20190716-1624.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.create(MavenProjectManager.java:80) [org.eclipse.m2e.core_1.13.0.20190716-1624.jar:na]
+	at org.eclipse.m2e.core.ui.internal.actions.SelectionUtil.getMavenProject(SelectionUtil.java:259) [org.eclipse.m2e.core.ui_1.13.0.20190716-1624.jar:na]
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:740) [org.eclipse.m2e.editor_1.13.0.20190716-1624.jar:na]
+	at org.eclipse.m2e.editor.pom.MavenPomEditor$5.run(MavenPomEditor.java:1074) [org.eclipse.m2e.editor_1.13.0.20190716-1624.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) [org.eclipse.core.jobs_3.10.500.v20190620-1426.jar:na]
+2023-10-15 21:45:23,947 [Worker-7: Building workspace] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.dsi:product-service:0.0.1-SNAPSHOT @ C:\Users\talel\Desktop\microservice\product-service\pom.xml.
+2023-10-15 21:45:28,871 [Worker-7: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 21:45:28,872 [Worker-7: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 21:45:28,874 [Worker-7: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-15 21:45:28,888 [Worker-7: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-10-15 21:45:28,890 [Worker-7: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 21:45:28,890 [Worker-7: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 21:45:28,890 [Worker-7: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\talel\Desktop\microservice\product-service\src\test\resources
+2023-10-15 21:45:28,920 [Worker-9: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2023-10-15 21:45:29,286 [Worker-9: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.dsi:product-service:0.0.1-SNAPSHOT @ C:\Users\talel\Desktop\microservice\product-service\pom.xml.
+2023-10-15 21:45:29,890 [Worker-9: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /product-service/src/main/java
+2023-10-15 21:45:29,890 [Worker-9: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /product-service/src/main/resources
+2023-10-15 21:45:29,896 [Worker-9: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /product-service/src/main/resources
+2023-10-15 21:45:29,905 [Worker-9: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /product-service/src/test/java
+2023-10-15 21:45:31,018 [Worker-9: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 2 sec
+2023-10-15 21:45:31,650 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 21:45:31,650 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 21:45:31,652 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-15 21:45:31,667 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-10-15 21:45:31,670 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 21:45:31,670 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 21:45:31,670 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\talel\Desktop\microservice\product-service\src\test\resources
+2023-10-15 21:46:17,913 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 21:46:17,913 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 21:46:17,917 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-15 21:46:17,918 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-10-15 21:46:17,921 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 21:46:17,922 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 21:46:17,922 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\talel\Desktop\microservice\product-service\src\test\resources
+2023-10-15 21:47:02,365 [Worker-8: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 21:47:02,365 [Worker-8: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 21:47:02,366 [Worker-8: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-15 21:47:02,382 [Worker-8: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-10-15 21:47:02,384 [Worker-8: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 21:47:02,384 [Worker-8: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 21:47:02,384 [Worker-8: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\talel\Desktop\microservice\product-service\src\test\resources
+2023-10-15 21:47:09,887 [Worker-8: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 21:47:09,888 [Worker-8: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 21:47:09,890 [Worker-8: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-15 21:47:09,894 [Worker-8: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-10-15 21:47:09,897 [Worker-8: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 21:47:09,897 [Worker-8: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 21:47:09,898 [Worker-8: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\talel\Desktop\microservice\product-service\src\test\resources
+2023-10-15 21:47:54,746 [Worker-10: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 21:47:54,746 [Worker-10: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 21:47:54,746 [Worker-10: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-15 21:47:54,749 [Worker-10: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-10-15 21:47:54,751 [Worker-10: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 21:47:54,751 [Worker-10: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 21:47:54,751 [Worker-10: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\talel\Desktop\microservice\product-service\src\test\resources
+2023-10-15 21:47:57,093 [Worker-7: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 21:47:57,093 [Worker-7: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 21:47:57,093 [Worker-7: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-15 21:47:57,096 [Worker-7: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-10-15 21:47:57,097 [Worker-7: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 21:47:57,097 [Worker-7: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 21:47:57,097 [Worker-7: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\talel\Desktop\microservice\product-service\src\test\resources
+2023-10-15 21:47:58,180 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 21:47:58,180 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 21:47:58,180 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-15 21:47:58,187 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-10-15 21:47:58,189 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 21:47:58,189 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 21:47:58,189 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\talel\Desktop\microservice\product-service\src\test\resources
+2023-10-15 21:48:01,228 [Worker-9: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 21:48:01,228 [Worker-9: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 21:48:01,228 [Worker-9: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-15 21:48:01,230 [Worker-9: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-10-15 21:48:01,233 [Worker-9: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 21:48:01,233 [Worker-9: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 21:48:01,233 [Worker-9: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\talel\Desktop\microservice\product-service\src\test\resources
+2023-10-15 21:48:04,009 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 21:48:04,009 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 21:48:04,010 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-15 21:48:04,012 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-10-15 21:48:04,013 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 21:48:04,013 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 21:48:04,013 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\talel\Desktop\microservice\product-service\src\test\resources
+2023-10-15 21:48:10,567 [Worker-8: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 21:48:10,567 [Worker-8: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 21:48:10,567 [Worker-8: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-15 21:48:10,572 [Worker-8: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-10-15 21:48:10,573 [Worker-8: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 21:48:10,574 [Worker-8: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 21:48:10,574 [Worker-8: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\talel\Desktop\microservice\product-service\src\test\resources
+2023-10-15 21:48:13,418 [Worker-7: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 21:48:13,419 [Worker-7: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 21:48:13,419 [Worker-7: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-15 21:48:13,431 [Worker-7: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-10-15 21:48:13,433 [Worker-7: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 21:48:13,433 [Worker-7: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 21:48:13,433 [Worker-7: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\talel\Desktop\microservice\product-service\src\test\resources
+2023-10-15 21:48:20,820 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 21:48:20,820 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 21:48:20,821 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-15 21:48:20,824 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-10-15 21:48:20,827 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 21:48:20,827 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 21:48:20,827 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\talel\Desktop\microservice\product-service\src\test\resources
+2023-10-15 21:48:30,864 [Worker-8: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 21:48:30,864 [Worker-8: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 21:48:30,865 [Worker-8: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-15 21:48:30,868 [Worker-8: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-10-15 21:48:30,870 [Worker-8: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 21:48:30,870 [Worker-8: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 21:48:30,870 [Worker-8: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\talel\Desktop\microservice\product-service\src\test\resources
+2023-10-15 21:48:34,854 [Worker-8: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 21:48:34,855 [Worker-8: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 21:48:34,855 [Worker-8: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-15 21:48:34,857 [Worker-8: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-10-15 21:48:34,859 [Worker-8: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 21:48:34,859 [Worker-8: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 21:48:34,859 [Worker-8: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\talel\Desktop\microservice\product-service\src\test\resources
+2023-10-15 21:48:48,025 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 21:48:48,026 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 21:48:48,026 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-15 21:48:48,032 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-10-15 21:48:48,034 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 21:48:48,034 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 21:48:48,034 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\talel\Desktop\microservice\product-service\src\test\resources
+2023-10-15 21:48:56,492 [Worker-9: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 21:48:56,492 [Worker-9: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 21:48:56,494 [Worker-9: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-15 21:48:56,505 [Worker-9: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-10-15 21:48:56,511 [Worker-9: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 21:48:56,511 [Worker-9: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 21:48:56,511 [Worker-9: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\talel\Desktop\microservice\product-service\src\test\resources
+2023-10-15 21:49:08,420 [Worker-9: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 21:49:08,420 [Worker-9: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 21:49:08,420 [Worker-9: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-15 21:49:08,424 [Worker-9: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-10-15 21:49:08,425 [Worker-9: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 21:49:08,425 [Worker-9: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 21:49:08,425 [Worker-9: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\talel\Desktop\microservice\product-service\src\test\resources
+2023-10-15 21:49:13,663 [Worker-1: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 21:49:13,663 [Worker-1: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 21:49:13,664 [Worker-1: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-15 21:49:13,666 [Worker-1: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-10-15 21:49:13,667 [Worker-1: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 21:49:13,667 [Worker-1: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 21:49:13,667 [Worker-1: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\talel\Desktop\microservice\product-service\src\test\resources
+2023-10-15 21:49:36,948 [Worker-10: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 21:49:36,948 [Worker-10: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 21:49:36,949 [Worker-10: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-15 21:49:36,951 [Worker-10: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-10-15 21:49:36,953 [Worker-10: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 21:49:36,953 [Worker-10: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 21:49:36,953 [Worker-10: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\talel\Desktop\microservice\product-service\src\test\resources
+2023-10-15 21:49:43,527 [Worker-10: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 21:49:43,527 [Worker-10: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 21:49:43,527 [Worker-10: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-15 21:49:43,540 [Worker-10: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-10-15 21:49:43,541 [Worker-10: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 21:49:43,541 [Worker-10: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 21:49:43,541 [Worker-10: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\talel\Desktop\microservice\product-service\src\test\resources
+2023-10-15 21:49:48,527 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 21:49:48,527 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 21:49:48,528 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-15 21:49:48,530 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-10-15 21:49:48,531 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 21:49:48,532 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 21:49:48,532 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\talel\Desktop\microservice\product-service\src\test\resources
+2023-10-15 21:50:36,019 [Worker-1: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 21:50:36,019 [Worker-1: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 21:50:36,020 [Worker-1: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-15 21:50:36,027 [Worker-1: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-10-15 21:50:36,028 [Worker-1: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 21:50:36,028 [Worker-1: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 21:50:36,028 [Worker-1: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\talel\Desktop\microservice\product-service\src\test\resources
+2023-10-15 21:50:40,266 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 21:50:40,266 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 21:50:40,266 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-15 21:50:40,270 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-10-15 21:50:40,271 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 21:50:40,271 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 21:50:40,271 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\talel\Desktop\microservice\product-service\src\test\resources
+2023-10-15 21:50:41,950 [Worker-7: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 21:50:41,950 [Worker-7: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 21:50:41,950 [Worker-7: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-15 21:50:41,952 [Worker-7: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-10-15 21:50:41,953 [Worker-7: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 21:50:41,953 [Worker-7: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 21:50:41,953 [Worker-7: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\talel\Desktop\microservice\product-service\src\test\resources
+2023-10-15 21:50:48,028 [Worker-10: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 21:50:48,029 [Worker-10: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 21:50:48,029 [Worker-10: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-15 21:50:48,031 [Worker-10: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-10-15 21:50:48,033 [Worker-10: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 21:50:48,033 [Worker-10: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 21:50:48,033 [Worker-10: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\talel\Desktop\microservice\product-service\src\test\resources
+2023-10-15 21:50:49,056 [Worker-8: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 21:50:49,056 [Worker-8: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 21:50:49,056 [Worker-8: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-15 21:50:49,074 [Worker-8: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-10-15 21:50:49,076 [Worker-8: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 21:50:49,076 [Worker-8: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 21:50:49,076 [Worker-8: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\talel\Desktop\microservice\product-service\src\test\resources
+2023-10-15 21:50:57,285 [Worker-7: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 21:50:57,286 [Worker-7: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 21:50:57,286 [Worker-7: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-15 21:50:57,289 [Worker-7: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-10-15 21:50:57,289 [Worker-7: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 21:50:57,291 [Worker-7: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 21:50:57,291 [Worker-7: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\talel\Desktop\microservice\product-service\src\test\resources
+2023-10-15 21:51:04,155 [Worker-9: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 21:51:04,155 [Worker-9: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 21:51:04,155 [Worker-9: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-15 21:51:04,158 [Worker-9: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-10-15 21:51:04,160 [Worker-9: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 21:51:04,160 [Worker-9: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 21:51:04,160 [Worker-9: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\talel\Desktop\microservice\product-service\src\test\resources
+2023-10-15 21:51:05,269 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 21:51:05,269 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 21:51:05,269 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-15 21:51:05,271 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-10-15 21:51:05,272 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 21:51:05,272 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 21:51:05,272 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\talel\Desktop\microservice\product-service\src\test\resources
+2023-10-15 21:51:57,201 [Worker-10: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 21:51:57,201 [Worker-10: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 21:51:57,201 [Worker-10: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-15 21:51:57,204 [Worker-10: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-10-15 21:51:57,206 [Worker-10: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 21:51:57,206 [Worker-10: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 21:51:57,206 [Worker-10: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\talel\Desktop\microservice\product-service\src\test\resources
+2023-10-15 21:52:11,428 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 21:52:11,428 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 21:52:11,429 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-15 21:52:11,431 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-10-15 21:52:11,432 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 21:52:11,432 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 21:52:11,432 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\talel\Desktop\microservice\product-service\src\test\resources
+2023-10-15 21:52:14,363 [Worker-7: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 21:52:14,363 [Worker-7: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 21:52:14,363 [Worker-7: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-15 21:52:14,365 [Worker-7: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-10-15 21:52:14,366 [Worker-7: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 21:52:14,367 [Worker-7: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 21:52:14,367 [Worker-7: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\talel\Desktop\microservice\product-service\src\test\resources
+2023-10-15 21:52:49,650 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 21:52:49,650 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 21:52:49,651 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-15 21:52:49,654 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-10-15 21:52:49,655 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 21:52:49,656 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 21:52:49,656 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\talel\Desktop\microservice\product-service\src\test\resources
+2023-10-15 21:55:34,096 [Worker-1: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 21:55:34,096 [Worker-1: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 21:55:34,096 [Worker-1: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-15 21:55:34,099 [Worker-1: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-10-15 21:55:34,100 [Worker-1: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 21:55:34,100 [Worker-1: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 21:55:34,100 [Worker-1: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\talel\Desktop\microservice\product-service\src\test\resources
+2023-10-15 22:00:26,895 [Worker-8: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 0 sec
+2023-10-15 22:00:26,896 [Worker-8: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2023-10-15 22:00:26,911 [Worker-8: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2023-10-15 22:00:29,498 [Worker-8: reload maven project] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Failed to read Maven project: Some problems were encountered while processing the POMs:
+[FATAL] Non-resolvable parent POM for org.dsi:gateway-service:0.0.1-SNAPSHOT: Failure to find org.springframework.boot:spring-boot-starter-parent:pom:2.7.16.RELEASE in https://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced and 'parent.relativePath' points at no local POM @ line 5, column 10
+
+org.apache.maven.project.ProjectBuildingException: Some problems were encountered while processing the POMs:
+[FATAL] Non-resolvable parent POM for org.dsi:gateway-service:0.0.1-SNAPSHOT: Failure to find org.springframework.boot:spring-boot-starter-parent:pom:2.7.16.RELEASE in https://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced and 'parent.relativePath' points at no local POM @ line 5, column 10
+
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readMavenProjects(MavenImpl.java:676) ~[org.eclipse.m2e.core_1.13.0.20190716-1624.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$12(ProjectRegistryManager.java:871) ~[org.eclipse.m2e.core_1.13.0.20190716-1624.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177) ~[org.eclipse.m2e.core_1.13.0.20190716-1624.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) ~[org.eclipse.m2e.core_1.13.0.20190716-1624.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) ~[org.eclipse.m2e.core_1.13.0.20190716-1624.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.execute(ProjectRegistryManager.java:1026) ~[org.eclipse.m2e.core_1.13.0.20190716-1624.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectsWithDependencies(ProjectRegistryManager.java:867) ~[org.eclipse.m2e.core_1.13.0.20190716-1624.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.create(ProjectRegistryManager.java:207) ~[org.eclipse.m2e.core_1.13.0.20190716-1624.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.create(MavenProjectManager.java:80) [org.eclipse.m2e.core_1.13.0.20190716-1624.jar:na]
+	at org.eclipse.m2e.core.ui.internal.actions.SelectionUtil.getMavenProject(SelectionUtil.java:259) [org.eclipse.m2e.core.ui_1.13.0.20190716-1624.jar:na]
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:740) [org.eclipse.m2e.editor_1.13.0.20190716-1624.jar:na]
+	at org.eclipse.m2e.editor.pom.MavenPomEditor$5.run(MavenPomEditor.java:1074) [org.eclipse.m2e.editor_1.13.0.20190716-1624.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) [org.eclipse.core.jobs_3.10.500.v20190620-1426.jar:na]
+2023-10-15 22:00:33,159 [Worker-14: Building workspace] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.dsi:gateway-service:0.0.1-SNAPSHOT @ C:\Users\talel\Desktop\microservice\gateway-service\pom.xml.
+2023-10-15 22:00:34,057 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:00:34,057 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:00:34,057 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-15 22:00:34,059 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-10-15 22:00:34,061 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:00:34,061 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:00:34,061 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\talel\Desktop\microservice\gateway-service\src\test\resources
+2023-10-15 22:00:39,211 [Worker-13: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2023-10-15 22:00:39,500 [Worker-13: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.dsi:gateway-service:0.0.1-SNAPSHOT @ C:\Users\talel\Desktop\microservice\gateway-service\pom.xml.
+2023-10-15 22:00:39,893 [Worker-13: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /gateway-service/src/main/java
+2023-10-15 22:00:39,893 [Worker-13: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /gateway-service/src/main/resources
+2023-10-15 22:00:39,897 [Worker-13: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /gateway-service/src/main/resources
+2023-10-15 22:00:39,905 [Worker-13: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /gateway-service/src/test/java
+2023-10-15 22:00:40,164 [Worker-13: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2023-10-15 22:00:40,893 [Worker-13: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:00:40,893 [Worker-13: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:00:40,893 [Worker-13: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-15 22:00:40,895 [Worker-13: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-10-15 22:00:40,896 [Worker-13: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:00:40,897 [Worker-13: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:00:40,897 [Worker-13: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\talel\Desktop\microservice\gateway-service\src\test\resources
+2023-10-15 22:03:26,068 [Worker-13: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:03:26,070 [Worker-13: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:03:26,070 [Worker-13: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-15 22:03:26,075 [Worker-13: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-10-15 22:03:26,076 [Worker-13: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:03:26,076 [Worker-13: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:03:26,076 [Worker-13: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\talel\Desktop\microservice\gateway-service\src\test\resources
+2023-10-15 22:03:29,187 [Worker-15: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:03:29,187 [Worker-15: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:03:29,187 [Worker-15: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-15 22:03:29,192 [Worker-15: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-10-15 22:03:29,194 [Worker-15: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:03:29,194 [Worker-15: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:03:29,194 [Worker-15: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\talel\Desktop\microservice\gateway-service\src\test\resources
+2023-10-15 22:03:30,233 [Worker-15: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:03:30,233 [Worker-15: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:03:30,234 [Worker-15: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-15 22:03:30,238 [Worker-15: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-10-15 22:03:30,239 [Worker-15: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:03:30,239 [Worker-15: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:03:30,239 [Worker-15: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\talel\Desktop\microservice\gateway-service\src\test\resources
+2023-10-15 22:03:32,310 [Worker-13: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:03:32,310 [Worker-13: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:03:32,310 [Worker-13: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-15 22:03:32,337 [Worker-13: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-10-15 22:03:32,340 [Worker-13: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:03:32,340 [Worker-13: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:03:32,340 [Worker-13: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\talel\Desktop\microservice\gateway-service\src\test\resources
+2023-10-15 22:03:34,398 [Worker-15: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:03:34,398 [Worker-15: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:03:34,398 [Worker-15: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-15 22:03:34,400 [Worker-15: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-10-15 22:03:34,402 [Worker-15: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:03:34,402 [Worker-15: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:03:34,402 [Worker-15: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\talel\Desktop\microservice\gateway-service\src\test\resources
+2023-10-15 22:03:38,425 [Worker-18: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:03:38,425 [Worker-18: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:03:38,425 [Worker-18: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-15 22:03:38,428 [Worker-18: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-10-15 22:03:38,432 [Worker-18: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:03:38,432 [Worker-18: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:03:38,432 [Worker-18: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\talel\Desktop\microservice\gateway-service\src\test\resources
+2023-10-15 22:03:44,136 [Worker-13: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:03:44,136 [Worker-13: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:03:44,136 [Worker-13: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-15 22:03:44,139 [Worker-13: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-10-15 22:03:44,140 [Worker-13: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:03:44,140 [Worker-13: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:03:44,140 [Worker-13: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\talel\Desktop\microservice\gateway-service\src\test\resources
+2023-10-15 22:03:46,558 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:03:46,558 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:03:46,558 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-15 22:03:46,562 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-10-15 22:03:46,564 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:03:46,564 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:03:46,564 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\talel\Desktop\microservice\gateway-service\src\test\resources
+2023-10-15 22:03:49,625 [Worker-18: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:03:49,625 [Worker-18: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:03:49,625 [Worker-18: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-15 22:03:49,628 [Worker-18: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-10-15 22:03:49,630 [Worker-18: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:03:49,630 [Worker-18: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:03:49,630 [Worker-18: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\talel\Desktop\microservice\gateway-service\src\test\resources
+2023-10-15 22:03:53,209 [Worker-16: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:03:53,209 [Worker-16: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:03:53,209 [Worker-16: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-15 22:03:53,221 [Worker-16: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-10-15 22:03:53,223 [Worker-16: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:03:53,223 [Worker-16: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:03:53,224 [Worker-16: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\talel\Desktop\microservice\gateway-service\src\test\resources
+2023-10-15 22:04:13,126 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:04:13,126 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:04:13,126 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-15 22:04:13,129 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-10-15 22:04:13,130 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:04:13,130 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:04:13,131 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\talel\Desktop\microservice\gateway-service\src\test\resources
+2023-10-15 22:04:18,870 [Worker-18: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:04:18,870 [Worker-18: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:04:18,870 [Worker-18: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-15 22:04:18,873 [Worker-18: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-10-15 22:04:18,874 [Worker-18: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:04:18,874 [Worker-18: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:04:18,874 [Worker-18: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\talel\Desktop\microservice\gateway-service\src\test\resources
+2023-10-15 22:04:56,501 [Worker-18: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:04:56,501 [Worker-18: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:04:56,501 [Worker-18: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-15 22:04:56,503 [Worker-18: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-10-15 22:04:56,504 [Worker-18: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:04:56,505 [Worker-18: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:04:56,505 [Worker-18: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\talel\Desktop\microservice\gateway-service\src\test\resources
+2023-10-15 22:05:10,230 [Worker-21: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:05:10,230 [Worker-21: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:05:10,230 [Worker-21: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-15 22:05:10,233 [Worker-21: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:05:10,233 [Worker-21: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:05:10,233 [Worker-21: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\talel\Desktop\microservice\gateway-service\src\test\resources
+2023-10-15 22:05:32,879 [Worker-20: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:05:32,879 [Worker-20: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:05:32,879 [Worker-20: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-15 22:05:32,881 [Worker-20: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:05:32,882 [Worker-20: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:05:32,882 [Worker-20: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\talel\Desktop\microservice\gateway-service\src\test\resources
+2023-10-15 22:06:51,095 [Worker-14: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2023-10-15 22:06:51,440 [Worker-14: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.dsi:gateway-service:0.0.1-SNAPSHOT @ C:\Users\talel\Desktop\microservice\gateway-service\pom.xml.
+2023-10-15 22:06:51,986 [Worker-14: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /gateway-service/src/main/java
+2023-10-15 22:06:51,987 [Worker-14: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /gateway-service/src/main/resources
+2023-10-15 22:06:51,987 [Worker-14: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /gateway-service/src/main/resources
+2023-10-15 22:06:51,987 [Worker-14: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /gateway-service/src/test/java
+2023-10-15 22:06:52,296 [Worker-14: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 1 sec
+2023-10-15 22:06:52,917 [Worker-19: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:06:52,917 [Worker-19: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:06:52,917 [Worker-19: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-15 22:06:52,918 [Worker-19: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-10-15 22:06:52,920 [Worker-19: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:06:52,920 [Worker-19: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:06:52,920 [Worker-19: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\talel\Desktop\microservice\gateway-service\src\test\resources
+2023-10-15 22:09:20,385 [Worker-20: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 0 sec
+2023-10-15 22:09:20,386 [Worker-20: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2023-10-15 22:09:20,394 [Worker-20: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2023-10-15 22:09:23,868 [Worker-13: reload maven project] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Failed to read Maven project: Some problems were encountered while processing the POMs:
+[FATAL] Non-resolvable parent POM for org.dsi:register-service:0.0.1-SNAPSHOT: Failure to find org.springframework.boot:spring-boot-starter-parent:pom:2.7.16.RELEASE in https://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced and 'parent.relativePath' points at no local POM @ line 5, column 10
+
+org.apache.maven.project.ProjectBuildingException: Some problems were encountered while processing the POMs:
+[FATAL] Non-resolvable parent POM for org.dsi:register-service:0.0.1-SNAPSHOT: Failure to find org.springframework.boot:spring-boot-starter-parent:pom:2.7.16.RELEASE in https://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced and 'parent.relativePath' points at no local POM @ line 5, column 10
+
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readMavenProjects(MavenImpl.java:676) ~[org.eclipse.m2e.core_1.13.0.20190716-1624.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$12(ProjectRegistryManager.java:871) ~[org.eclipse.m2e.core_1.13.0.20190716-1624.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177) ~[org.eclipse.m2e.core_1.13.0.20190716-1624.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) ~[org.eclipse.m2e.core_1.13.0.20190716-1624.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) ~[org.eclipse.m2e.core_1.13.0.20190716-1624.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.execute(ProjectRegistryManager.java:1026) ~[org.eclipse.m2e.core_1.13.0.20190716-1624.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectsWithDependencies(ProjectRegistryManager.java:867) ~[org.eclipse.m2e.core_1.13.0.20190716-1624.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.create(ProjectRegistryManager.java:207) ~[org.eclipse.m2e.core_1.13.0.20190716-1624.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.create(MavenProjectManager.java:80) [org.eclipse.m2e.core_1.13.0.20190716-1624.jar:na]
+	at org.eclipse.m2e.core.ui.internal.actions.SelectionUtil.getMavenProject(SelectionUtil.java:259) [org.eclipse.m2e.core.ui_1.13.0.20190716-1624.jar:na]
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:740) [org.eclipse.m2e.editor_1.13.0.20190716-1624.jar:na]
+	at org.eclipse.m2e.editor.pom.MavenPomEditor$5.run(MavenPomEditor.java:1074) [org.eclipse.m2e.editor_1.13.0.20190716-1624.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) [org.eclipse.core.jobs_3.10.500.v20190620-1426.jar:na]
+2023-10-15 22:09:26,922 [Worker-20: Building workspace] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.dsi:register-service:0.0.1-SNAPSHOT @ C:\Users\talel\Desktop\microservice\register-service\pom.xml.
+2023-10-15 22:09:27,214 [Worker-20: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:09:27,215 [Worker-20: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:09:27,215 [Worker-20: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-15 22:09:27,216 [Worker-20: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-10-15 22:09:27,217 [Worker-20: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:09:27,217 [Worker-20: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:09:27,217 [Worker-20: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\talel\Desktop\microservice\register-service\src\test\resources
+2023-10-15 22:09:32,356 [Worker-13: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2023-10-15 22:09:32,585 [Worker-13: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.dsi:register-service:0.0.1-SNAPSHOT @ C:\Users\talel\Desktop\microservice\register-service\pom.xml.
+2023-10-15 22:09:32,825 [Worker-13: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /register-service/src/main/java
+2023-10-15 22:09:32,825 [Worker-13: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /register-service/src/main/resources
+2023-10-15 22:09:32,827 [Worker-13: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /register-service/src/main/resources
+2023-10-15 22:09:32,830 [Worker-13: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /register-service/src/test/java
+2023-10-15 22:09:32,983 [Worker-13: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2023-10-15 22:09:33,387 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:09:33,387 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:09:33,387 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-15 22:09:33,388 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-10-15 22:09:33,389 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:09:33,389 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:09:33,389 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\talel\Desktop\microservice\register-service\src\test\resources
+2023-10-15 22:10:03,369 [Worker-21: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:10:03,369 [Worker-21: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:10:03,370 [Worker-21: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-15 22:10:03,372 [Worker-21: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-10-15 22:10:03,373 [Worker-21: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:10:03,373 [Worker-21: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:10:03,373 [Worker-21: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\talel\Desktop\microservice\register-service\src\test\resources
+2023-10-15 22:10:22,477 [Worker-21: Building workspace] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.dsi:register-service:0.0.1-SNAPSHOT @ C:\Users\talel\Desktop\microservice\register-service\pom.xml.
+2023-10-15 22:10:22,593 [Worker-21: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:10:22,593 [Worker-21: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:10:22,594 [Worker-21: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-10-15 22:10:22,594 [Worker-21: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-10-15 22:10:22,595 [Worker-21: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:10:22,595 [Worker-21: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:10:22,595 [Worker-21: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\talel\Desktop\microservice\register-service\src\test\resources
+2023-10-15 22:10:23,746 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:10:23,746 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:10:23,747 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-15 22:10:23,747 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-10-15 22:10:23,749 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:10:23,749 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:10:23,749 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\talel\Desktop\microservice\register-service\src\test\resources
+2023-10-15 22:10:59,855 [Worker-14: Building workspace] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.dsi:register-service:0.0.1-SNAPSHOT @ C:\Users\talel\Desktop\microservice\register-service\pom.xml.
+2023-10-15 22:11:00,245 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:11:00,245 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:11:00,245 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-10-15 22:11:00,246 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-10-15 22:11:00,247 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:11:00,247 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:11:00,247 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\talel\Desktop\microservice\register-service\src\test\resources
+2023-10-15 22:11:01,684 [Worker-21: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:11:01,684 [Worker-21: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:11:01,685 [Worker-21: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-15 22:11:01,686 [Worker-21: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-10-15 22:11:01,687 [Worker-21: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:11:01,687 [Worker-21: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:11:01,687 [Worker-21: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\talel\Desktop\microservice\register-service\src\test\resources
+2023-10-15 22:11:09,793 [Worker-14: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2023-10-15 22:11:10,028 [Worker-14: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.dsi:register-service:0.0.1-SNAPSHOT @ C:\Users\talel\Desktop\microservice\register-service\pom.xml.
+2023-10-15 22:11:10,273 [Worker-14: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /register-service/src/main/java
+2023-10-15 22:11:10,274 [Worker-14: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /register-service/src/main/resources
+2023-10-15 22:11:10,274 [Worker-14: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /register-service/src/main/resources
+2023-10-15 22:11:10,274 [Worker-14: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /register-service/src/test/java
+2023-10-15 22:11:10,409 [Worker-14: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2023-10-15 22:11:10,828 [Worker-13: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:11:10,828 [Worker-13: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:11:10,828 [Worker-13: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-15 22:11:10,829 [Worker-13: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-10-15 22:11:10,830 [Worker-13: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:11:10,831 [Worker-13: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:11:10,831 [Worker-13: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\talel\Desktop\microservice\register-service\src\test\resources
+2023-10-15 22:11:29,996 [Worker-13: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:11:29,996 [Worker-13: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:11:29,996 [Worker-13: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-15 22:11:29,998 [Worker-13: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-10-15 22:11:29,999 [Worker-13: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:11:29,999 [Worker-13: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:11:29,999 [Worker-13: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\talel\Desktop\microservice\register-service\src\test\resources
+2023-10-15 22:11:36,556 [Worker-19: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2023-10-15 22:11:36,799 [Worker-19: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.dsi:register-service:0.0.1-SNAPSHOT @ C:\Users\talel\Desktop\microservice\register-service\pom.xml.
+2023-10-15 22:11:37,057 [Worker-19: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /register-service/src/main/java
+2023-10-15 22:11:37,059 [Worker-19: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /register-service/src/main/resources
+2023-10-15 22:11:37,059 [Worker-19: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /register-service/src/main/resources
+2023-10-15 22:11:37,059 [Worker-19: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /register-service/src/test/java
+2023-10-15 22:11:37,190 [Worker-19: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2023-10-15 22:11:37,650 [Worker-20: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:11:37,650 [Worker-20: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:11:37,650 [Worker-20: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-15 22:11:37,652 [Worker-20: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-10-15 22:11:37,653 [Worker-20: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:11:37,653 [Worker-20: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:11:37,653 [Worker-20: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\talel\Desktop\microservice\register-service\src\test\resources
+2023-10-15 22:11:57,029 [Worker-21: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:11:57,029 [Worker-21: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:11:57,029 [Worker-21: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-15 22:11:57,031 [Worker-21: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-10-15 22:11:57,033 [Worker-21: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:11:57,034 [Worker-21: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:11:57,034 [Worker-21: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\talel\Desktop\microservice\register-service\src\test\resources
+2023-10-15 22:15:42,759 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:15:42,759 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:15:42,759 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-15 22:15:42,764 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-10-15 22:15:42,765 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:15:42,765 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:15:42,765 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\talel\Desktop\microservice\register-service\src\test\resources
+2023-10-15 22:16:22,046 [Worker-21: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:16:22,047 [Worker-21: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:16:22,047 [Worker-21: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-15 22:16:22,092 [Worker-21: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-10-15 22:16:22,094 [Worker-21: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:16:22,095 [Worker-21: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:16:22,095 [Worker-21: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\talel\Desktop\microservice\product-service\src\test\resources
+2023-10-15 22:16:40,199 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:16:40,199 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:16:40,199 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-15 22:16:40,202 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-10-15 22:16:40,203 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:16:40,203 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:16:40,203 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\talel\Desktop\microservice\product-service\src\test\resources
+2023-10-15 22:16:51,375 [Worker-19: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:16:51,375 [Worker-19: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:16:51,375 [Worker-19: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-15 22:16:51,379 [Worker-19: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-10-15 22:16:51,379 [Worker-19: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:16:51,379 [Worker-19: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:16:51,380 [Worker-19: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\talel\Desktop\microservice\product-service\src\test\resources
+2023-10-15 22:17:15,084 [Worker-21: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:17:15,084 [Worker-21: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:17:15,084 [Worker-21: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-15 22:17:15,088 [Worker-21: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-10-15 22:17:15,090 [Worker-21: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:17:15,090 [Worker-21: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:17:15,090 [Worker-21: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\talel\Desktop\microservice\gateway-service\src\test\resources
+2023-10-15 22:17:41,198 [Worker-19: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:17:41,199 [Worker-19: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:17:41,199 [Worker-19: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-15 22:17:41,201 [Worker-19: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-10-15 22:17:41,202 [Worker-19: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:17:41,203 [Worker-19: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:17:41,203 [Worker-19: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\talel\Desktop\microservice\gateway-service\src\test\resources
+2023-10-15 22:17:54,615 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:17:54,615 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:17:54,615 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-15 22:17:54,617 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-10-15 22:17:54,639 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:17:54,639 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:17:54,639 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\talel\Desktop\microservice\product-service\src\test\resources
+2023-10-15 22:18:18,646 [Worker-19: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:18:18,646 [Worker-19: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:18:18,646 [Worker-19: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-15 22:18:18,648 [Worker-19: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-10-15 22:18:18,649 [Worker-19: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:18:18,649 [Worker-19: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:18:18,649 [Worker-19: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\talel\Desktop\microservice\product-service\src\test\resources
+2023-10-15 22:20:40,908 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:20:40,908 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:20:40,908 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-15 22:20:40,912 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-10-15 22:20:40,913 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:20:40,913 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:20:40,913 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\talel\Desktop\microservice\gateway-service\src\test\resources
+2023-10-15 22:20:44,036 [Worker-27: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:20:44,036 [Worker-27: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:20:44,036 [Worker-27: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-15 22:20:44,040 [Worker-27: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-10-15 22:20:44,042 [Worker-27: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:20:44,042 [Worker-27: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:20:44,042 [Worker-27: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\talel\Desktop\microservice\gateway-service\src\test\resources
+2023-10-15 22:20:49,491 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:20:49,491 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:20:49,492 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-15 22:20:49,494 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-10-15 22:20:49,495 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:20:49,495 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:20:49,495 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\talel\Desktop\microservice\gateway-service\src\test\resources
+2023-10-15 22:20:54,972 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:20:54,972 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:20:54,972 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-15 22:20:54,986 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-10-15 22:20:54,988 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:20:54,988 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:20:54,988 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\talel\Desktop\microservice\gateway-service\src\test\resources
+2023-10-15 22:21:17,862 [Worker-28: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:21:17,863 [Worker-28: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:21:17,863 [Worker-28: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-15 22:21:17,866 [Worker-28: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-10-15 22:21:17,867 [Worker-28: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:21:17,867 [Worker-28: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:21:17,867 [Worker-28: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\talel\Desktop\microservice\gateway-service\src\test\resources
+2023-10-15 22:23:02,907 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:23:02,907 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:23:02,907 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-15 22:23:02,909 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-10-15 22:23:02,910 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:23:02,910 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:23:02,910 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\talel\Desktop\microservice\gateway-service\src\test\resources
+2023-10-15 22:23:05,089 [Worker-16: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:23:05,089 [Worker-16: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:23:05,089 [Worker-16: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-15 22:23:05,091 [Worker-16: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-10-15 22:23:05,092 [Worker-16: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:23:05,092 [Worker-16: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:23:05,092 [Worker-16: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\talel\Desktop\microservice\gateway-service\src\test\resources
+2023-10-15 22:23:06,136 [Worker-30: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:23:06,136 [Worker-30: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:23:06,136 [Worker-30: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-15 22:23:06,139 [Worker-30: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-10-15 22:23:06,140 [Worker-30: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:23:06,140 [Worker-30: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:23:06,140 [Worker-30: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\talel\Desktop\microservice\gateway-service\src\test\resources
+2023-10-15 22:23:08,506 [Worker-25: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:23:08,506 [Worker-25: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:23:08,506 [Worker-25: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-15 22:23:08,510 [Worker-25: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-10-15 22:23:08,511 [Worker-25: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:23:08,511 [Worker-25: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:23:08,511 [Worker-25: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\talel\Desktop\microservice\gateway-service\src\test\resources
+2023-10-15 22:23:13,591 [Worker-16: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:23:13,591 [Worker-16: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:23:13,592 [Worker-16: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-15 22:23:13,618 [Worker-16: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-10-15 22:23:13,621 [Worker-16: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:23:13,621 [Worker-16: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:23:13,621 [Worker-16: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\talel\Desktop\microservice\gateway-service\src\test\resources
+2023-10-15 22:23:15,676 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:23:15,676 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:23:15,676 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-15 22:23:15,679 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-10-15 22:23:15,679 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:23:15,679 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:23:15,679 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\talel\Desktop\microservice\gateway-service\src\test\resources
+2023-10-15 22:24:09,888 [Worker-27: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:24:09,888 [Worker-27: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:24:09,888 [Worker-27: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-15 22:24:09,890 [Worker-27: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-10-15 22:24:09,891 [Worker-27: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:24:09,891 [Worker-27: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:24:09,891 [Worker-27: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\talel\Desktop\microservice\gateway-service\src\test\resources
+2023-10-15 22:24:13,595 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:24:13,595 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:24:13,595 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-15 22:24:13,598 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-10-15 22:24:13,599 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-15 22:24:13,599 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-15 22:24:13,600 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\talel\Desktop\microservice\gateway-service\src\test\resources
